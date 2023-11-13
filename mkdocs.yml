@@ -1,0 +1,42 @@
+site_name: Inge – Dokumentation
+repo_url: https://github.com/kraenzle-ritter/inge-documentation
+repo_name: 'inge-documentation'
+site_author: 'Andreas Kraenzle, Gerold Ritter'
+theme:
+  name: material
+  language: de
+  logo: images/inge.png
+  #favicon: images/favicon-anton.png
+  font:
+    text: Roboto
+    code: Open Mono
+  features:
+    - search.suggest
+    - search.highlight
+    - search.share
+extra_css:
+  - stylesheets/extra.css
+markdown_extensions:
+  - admonition
+  - codehilite
+  - pymdownx.inlinehilite
+  - pymdownx.inlinehilite
+  - footnotes
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+nav:
+  - Home: index.md
+  - Installation: admin/installation.md
+  - API: api/index.md
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/kraenzle-ritter
+plugins:
+  - render_swagger
+  - search:
+      lang:
+        - de 
+      separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'

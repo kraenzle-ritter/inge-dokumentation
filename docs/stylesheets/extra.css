@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Noto:400,600,700');
+body, html {
+  font-family: 'Noto', sans-serif !important;
+  line-height: 1.42857143;
+  font-weight: 400 !important;
+  font-size: 24px !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: black !important;
+  font-weight: 600 !important;
+}
+
+.md-header {
+  background-color: #fe9000 !important;
+  height: 70px !important;
+}
+
+.md-header-nav__button.md-logo img, .md-header-nav__button.md-logo svg {
+  height: 40px !important;
+  width:  auto !important;
+}
+
+.md-header-nav__title {
+  font-family: 'Nunito', sans-serif;
+  padding-top: 10px !important;
+  padding-bottom: 5px !important;
+  padding-left: 10px !important;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  font-style: bold !important;
+}
+
+.md-search, .md-search_input, .md-header-nav__source {
+  margin-top: 10px !important;
+}
+
+.md-header-nav__button {
+  line-height: 3rem !important;
+}

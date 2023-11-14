@@ -48,4 +48,8 @@ php artisan migrate
 - User Bearer Token für Authentifizierung des AIS
 
 ### .env 
-- zweiter User für Löschen
+
+Zweiter User (für Löschen in DIMAG notwendig)
+
+SOAP_ADMIN_USERNAME=
+SOAP_ADMIN_PASSWORD=

@@ -1,0 +1,187 @@
+openapi: 3.0.2
+info:
+  title: API of Inge
+  description: API of Inge. Inge organizes file ingests into the DIMAG Repository for an Archival Information System.
+  version: 0.0.1
+
+servers:
+  - url: https://inge.anton.ch
+    description: Test Installation
+
+paths:
+  /status:
+    get:
+      security:
+        - bearerAuth: []
+      description: Check the status of Inge
+      responses:
+        '200':
+          description: OK
+          content:
+            'application/json':
+              schema:
+                type: object
+                properties:
+                  meta:
+                    type: object
+                  data:
+                    type: object
+        '401':
+          description: Unauthorised
+        '403':
+          description: Forbidden
+  /get-aids:
+    get: 
+      security:
+        - bearerAuth: []
+      description: Get a list of AIDs from Dimag. With key pid you can get all AIDs for a year (see the example).
+      parameters:
+        - in: path
+          name: key
+          type: string
+          example: pid
+        - in: path
+          name: value
+          type: string
+          example: galin-Jahr-2023
+      responses: 
+        '200': 
+          description: A list of AIDs separated by ";"
+          content:
+            'application/json':
+              schema:
+                type: object
+                properties:
+                  matches:
+                    type: integer
+                  aids: 
+                    type: string
+        '401':
+          description: Unauthorised
+        '403':
+          description: Forbidden
+        '404':
+          description: 'File/AID not found'
+  /file/{aid}:
+    get:
+      security:
+        - bearerAuth: []
+      summary: Get a file from Dimag
+      parameters:
+        - in: path
+          name: aid
+          type: string
+          required: true
+          description: AID identifier for a file in Dimag
+      responses:
+        '200':
+          description: Returns the file from Dimag
+          content:
+            application/*:
+              schema:
+                type: string
+                format: binary
+        '401':
+          description: Unauthorised
+        '403':
+          description: Forbidden
+        '404':
+          description: 'File/AID not found'
+  /ingest:
+    post:
+      security:
+        - bearerAuth: []
+      description: Ingest a file to Dimag
+      #produces: applicatio/json
+      #consumes: applicatio/json
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/IngestRequest'
+      responses:
+        '200':
+          description: OK
+        '401':
+          description: Unauthorised
+        '403':
+          description: Forbidden
+  /delete:
+    delete:
+      security:
+        - bearerAuth: []
+      description: Delete a file from Dimag
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/DeleteRequest'
+      responses:
+        '200':
+          description: OK
+        '401':
+          description: Unauthorised
+        '403':
+          description: Forbidden
+        '404':
+          description: 'File/AID not found'
+
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+  schemas:
+    IngestRequest:
+      type: object
+      required:
+        - aid
+        - path
+        - slug
+      properties:
+        aid:
+          type: string
+          maxLength: 36
+          description: A unique Identifier für a file within Dimag
+        path:
+          type: string
+          description: Path to the file within the SIP. Usually only the filename.
+        slug:
+          type: string
+          description: The abbreviation of the archive
+        type:
+          type: string
+          enum: [F, R, S, O]
+          description: A Dimag Type (usually F for file)
+        md5sum:
+          type: string
+          description: The md5sum of the file
+          minLength: 32
+          maxLength: 32
+          pattern: '^[0-9a-f]{32}$'
+        sip_id:
+          type: integer
+          description: The id of the SIP, if the file belongs to a SIP
+        title:
+          type: string
+          description: A title in Dimag
+        origFilename:
+          type: string
+          description: The original filename
+        filename:
+          type: string
+          description: The (current) filename from the AIS
+    DeleteRequest:
+      type: object
+      properties:
+        aid:
+          type: string
+          maxLength: 36
+          description: A unique Identifier für a file within Dimag. Required id sip_id is not set.
+        sip_id:
+          type: integer
+          description: SIP ID (delete all files from SIP). Required if aid is not set
+security:
+  - bearerAuth: []

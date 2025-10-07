@@ -4,7 +4,7 @@
 
 Inge ist eine [Laravel (Version 10)](https://laravel.com/docs/10.x/deployment) Applikation. 
 
-- PHP >= 8.1 (mit entsprechenden Extnsions)
+- PHP >= 8.1 (mit entsprechenden Extensions)
 - [MySQL](https://www.mysql.com/de/) >=5.7.8 or Maria DB >= 10.2.7
 - [composer](https://getcomposer.org)
 - email (e.g. sendmail)

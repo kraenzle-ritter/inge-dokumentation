@@ -32,6 +32,8 @@ nav:
   - API: api/index.md
 extra:
   social:
+    - icon: fontawesome/brands/mastodon
+      link: https://social.anoxinon.de/@anton
     - icon: fontawesome/brands/github
       link: https://github.com/kraenzle-ritter
 plugins:

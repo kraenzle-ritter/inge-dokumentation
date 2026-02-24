@@ -5,8 +5,8 @@ info:
   version: 0.0.1
 
 servers:
-  - url: https://inge.anton.ch
-    description: Test Installation
+#  - url: https://inge.anton.ch
+#    description: Test Installation
 
 paths:
   /status:

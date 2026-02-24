@@ -1,6 +1,6 @@
 # Inge
 
-Inge ist eine Schnittstelle zwischen Archiv-Informationssystemen (AIS) und dem digitalen Magazin Dimag. Sie ersetzt einerseits den Dimag Konnektor, andererseits ermöglicht sie den Ingest von Dateien und SIPs.
+Inge ist eine Schnittstelle zwischen Archiv-Informationssystemen (AIS) und dem digitalen Magazin Dimag. Sie ersetzt den Dimag Konnektor, und ermöglicht den Ingest von Dateien und SIPs.
 
 Dimag (digitales Magazin) ist eine Software für die digitale Langzeitarchivierung und wird von dem Landesarchiv Hessen, der Generaldirektion der Staatlichen Archive Bayerns und der Digitalen Archivierung Norddeutschland (DAN) entwickelt. In der Schweiz wird sie u.a. von den Staats- und Landesarchiven Aargau, Appenzell Innerrhoden, Schaffhausen, Solothurn und Zürich eingesetzt.
 
@@ -20,4 +20,4 @@ Inge wurde entwickelt, um den Ingest von SIP-Paketen (eCH-0160) direkt über das
 
 Kränzle & Ritter GmbH  
 [info@k-r.ch](mailto:info@k-r.ch)  
-[https://www.k-r.ch]
+[https://www.k-r.ch](https://www.k-r.ch)

@@ -29,6 +29,8 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Installation: admin/installation.md
+  - Command Line: admin/commands.md
+  - Troubleshooting: admin/troubleshooting.md
   - API: api/index.md
 extra:
   social:

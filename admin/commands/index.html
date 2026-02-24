@@ -11,10 +11,10 @@
       
       
       
-        <link rel="prev" href="../..">
+        <link rel="prev" href="../installation/">
       
       
-        <link rel="next" href="../commands/">
+        <link rel="next" href="../troubleshooting/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Installation - Inge – Dokumentation</title>
+        <title>Command Line - Inge – Dokumentation</title>
       
     
     
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#installation" class="md-skip">
+        <a href="#inge-commands-troubleshooting" class="md-skip">
           Zum Inhalt
         </a>
       
@@ -101,7 +101,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Installation
+              Command Line
             
           </span>
         </div>
@@ -246,6 +246,28 @@
       
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../installation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Installation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
     
   
   
@@ -263,7 +285,7 @@
   
   
   <span class="md-ellipsis">
-    Installation
+    Command Line
     
   </span>
   
@@ -276,7 +298,7 @@
   
   
   <span class="md-ellipsis">
-    Installation
+    Command Line
     
   </span>
   
@@ -299,55 +321,184 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#systemvoraussetzungen" class="md-nav__link">
+  <a href="#ubersicht" class="md-nav__link">
     <span class="md-ellipsis">
-      Systemvoraussetzungen
+      Übersicht
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#installation_1" class="md-nav__link">
+  <a href="#ingesync" class="md-nav__link">
     <span class="md-ellipsis">
-      Installation
+      inge:sync
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#einrichtung" class="md-nav__link">
-    <span class="md-ellipsis">
-      Einrichtung
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Einrichtung">
+    <nav class="md-nav" aria-label="inge:sync">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#archiv" class="md-nav__link">
+  <a href="#verwendung" class="md-nav__link">
     <span class="md-ellipsis">
-      Archiv
+      Verwendung
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#user" class="md-nav__link">
+  <a href="#optionen" class="md-nav__link">
     <span class="md-ellipsis">
-      User
+      Optionen
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#env" class="md-nav__link">
+  <a href="#was-passiert-bei-aid" class="md-nav__link">
     <span class="md-ellipsis">
-      .env
+      Was passiert bei --aid?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#status-codes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Status-Codes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ingeadd-archive" class="md-nav__link">
+    <span class="md-ellipsis">
+      inge:add-archive
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="inge:add-archive">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#verwendung_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verwendung
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ingeadd-user" class="md-nav__link">
+    <span class="md-ellipsis">
+      inge:add-user
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="inge:add-user">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#verwendung_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verwendung
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#optionen_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Optionen
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ingeset-access-token" class="md-nav__link">
+    <span class="md-ellipsis">
+      inge:set-access-token
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="inge:set-access-token">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#verwendung_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verwendung
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ingestatus" class="md-nav__link">
+    <span class="md-ellipsis">
+      inge:status
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="inge:status">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#verwendung_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verwendung
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#loadxmltest-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      loadxml:test-file
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="loadxml:test-file">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#verwendung_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verwendung
     </span>
   </a>
   
@@ -362,28 +513,6 @@
   
 </nav>
       
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../commands/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Command Line
-    
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -459,55 +588,184 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#systemvoraussetzungen" class="md-nav__link">
+  <a href="#ubersicht" class="md-nav__link">
     <span class="md-ellipsis">
-      Systemvoraussetzungen
+      Übersicht
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#installation_1" class="md-nav__link">
+  <a href="#ingesync" class="md-nav__link">
     <span class="md-ellipsis">
-      Installation
+      inge:sync
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#einrichtung" class="md-nav__link">
-    <span class="md-ellipsis">
-      Einrichtung
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Einrichtung">
+    <nav class="md-nav" aria-label="inge:sync">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#archiv" class="md-nav__link">
+  <a href="#verwendung" class="md-nav__link">
     <span class="md-ellipsis">
-      Archiv
+      Verwendung
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#user" class="md-nav__link">
+  <a href="#optionen" class="md-nav__link">
     <span class="md-ellipsis">
-      User
+      Optionen
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#env" class="md-nav__link">
+  <a href="#was-passiert-bei-aid" class="md-nav__link">
     <span class="md-ellipsis">
-      .env
+      Was passiert bei --aid?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#status-codes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Status-Codes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ingeadd-archive" class="md-nav__link">
+    <span class="md-ellipsis">
+      inge:add-archive
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="inge:add-archive">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#verwendung_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verwendung
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ingeadd-user" class="md-nav__link">
+    <span class="md-ellipsis">
+      inge:add-user
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="inge:add-user">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#verwendung_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verwendung
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#optionen_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Optionen
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ingeset-access-token" class="md-nav__link">
+    <span class="md-ellipsis">
+      inge:set-access-token
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="inge:set-access-token">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#verwendung_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verwendung
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ingestatus" class="md-nav__link">
+    <span class="md-ellipsis">
+      inge:status
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="inge:status">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#verwendung_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verwendung
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#loadxmltest-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      loadxml:test-file
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="loadxml:test-file">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#verwendung_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verwendung
     </span>
   </a>
   
@@ -537,66 +795,238 @@
   
 
 
-<h1 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h1>
-<h2 id="systemvoraussetzungen">Systemvoraussetzungen<a class="headerlink" href="#systemvoraussetzungen" title="Permanent link">&para;</a></h2>
-<p>Inge ist eine <a href="https://laravel.com/docs/10.x/deployment">Laravel (Version 10)</a> Applikation. </p>
-<ul>
-<li>PHP &gt;= 8.1 (mit entsprechenden Extensions)</li>
-<li><a href="https://www.mysql.com/de/">MySQL</a> &gt;=5.7.8 or Maria DB &gt;= 10.2.7</li>
-<li><a href="https://getcomposer.org">composer</a></li>
-<li>email (e.g. sendmail)</li>
-</ul>
-<h2 id="installation_1">Installation<a class="headerlink" href="#installation_1" title="Permanent link">&para;</a></h2>
-<div class="codehilite"><pre><span></span><code>composer<span class="w"> </span>install
+<h1 id="inge-commands-troubleshooting">INGE Commands &amp; Troubleshooting<a class="headerlink" href="#inge-commands-troubleshooting" title="Permanent link">&para;</a></h1>
+<h2 id="ubersicht">Übersicht<a class="headerlink" href="#ubersicht" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Befehl</th>
+<th>Beschreibung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>inge:sync</code></td>
+<td>INGE-Datenbank mit DIMAG synchronisieren</td>
+</tr>
+<tr>
+<td><code>inge:add-archive</code></td>
+<td>Neues Archiv anlegen oder aktualisieren</td>
+</tr>
+<tr>
+<td><code>inge:add-user</code></td>
+<td>Neuen Benutzer anlegen oder aktualisieren</td>
+</tr>
+<tr>
+<td><code>inge:set-access-token</code></td>
+<td>API-Token für Benutzer erstellen</td>
+</tr>
+<tr>
+<td><code>inge:status</code></td>
+<td>Status-Abfrage durchführen</td>
+</tr>
+<tr>
+<td><code>loadxml:test-file</code></td>
+<td>LoadXML-Testdatei für Archiv erstellen</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="ingesync">inge:sync<a class="headerlink" href="#ingesync" title="Permanent link">&para;</a></h2>
+<p>Synchronisiert die INGE-Datenbank mit DIMAG. Kann einzelne AIDs oder alle AIDs eines Archivs synchronisieren.</p>
+<h3 id="verwendung">Verwendung<a class="headerlink" href="#verwendung" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code><span class="c1"># Hilfe anzeigen</span>
+php<span class="w"> </span>artisan<span class="w"> </span>inge:sync<span class="w"> </span>--archive<span class="o">=</span>opfikon
+
+<span class="c1"># Einzelne AID synchronisieren (ruft finalize() auf)</span>
+php<span class="w"> </span>artisan<span class="w"> </span>inge:sync<span class="w"> </span>--archive<span class="o">=</span>opfikon<span class="w"> </span>--aid<span class="o">=</span>opfikon-media-445
+
+<span class="c1"># AID manuell auf Status setzen (ohne DIMAG-Abfrage)</span>
+php<span class="w"> </span>artisan<span class="w"> </span>inge:sync<span class="w"> </span>--archive<span class="o">=</span>opfikon<span class="w"> </span>--aid<span class="o">=</span>opfikon-media-445<span class="w"> </span>--status<span class="o">=</span><span class="m">20</span>
+
+<span class="c1"># Alle AIDs mit DIMAG synchronisieren</span>
+php<span class="w"> </span>artisan<span class="w"> </span>inge:sync<span class="w"> </span>--archive<span class="o">=</span>opfikon<span class="w"> </span>--all
+
+<span class="c1"># Fehlende AIDs aus DIMAG importieren</span>
+php<span class="w"> </span>artisan<span class="w"> </span>inge:sync<span class="w"> </span>--archive<span class="o">=</span>opfikon<span class="w"> </span>--import-missing
+
+<span class="c1"># Vorschau ohne Änderungen</span>
+php<span class="w"> </span>artisan<span class="w"> </span>inge:sync<span class="w"> </span>--archive<span class="o">=</span>opfikon<span class="w"> </span>--all<span class="w"> </span>--dry-run
+
+<span class="c1"># Verbose Output für Debugging</span>
+php<span class="w"> </span>artisan<span class="w"> </span>inge:sync<span class="w"> </span>--archive<span class="o">=</span>opfikon<span class="w"> </span>--aid<span class="o">=</span>opfikon-media-445<span class="w"> </span>-vv
 </code></pre></div>
 
-<div class="codehilite"><pre><span></span><code>php<span class="w"> </span>artisan<span class="w"> </span>migrate
+<h3 id="optionen">Optionen<a class="headerlink" href="#optionen" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Beschreibung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>--archive=&lt;slug&gt;</code></td>
+<td><strong>Pflicht.</strong> Archiv-Slug (z.B. opfikon)</td>
+</tr>
+<tr>
+<td><code>--aid=&lt;aid&gt;</code></td>
+<td>Einzelne AID synchronisieren</td>
+</tr>
+<tr>
+<td><code>--status=&lt;code&gt;</code></td>
+<td>Status manuell setzen (mit --aid)</td>
+</tr>
+<tr>
+<td><code>--all</code></td>
+<td>Alle AIDs des Archivs synchronisieren</td>
+</tr>
+<tr>
+<td><code>--import-missing</code></td>
+<td>AIDs aus DIMAG importieren die nicht in INGE sind</td>
+</tr>
+<tr>
+<td><code>--since=&lt;Y-m-d&gt;</code></td>
+<td>Für --import-missing: nur AIDs seit Datum</td>
+</tr>
+<tr>
+<td><code>--dry-run</code></td>
+<td>Zeigt was passieren würde ohne Änderungen</td>
+</tr>
+<tr>
+<td><code>-v</code> / <code>-vv</code></td>
+<td>Verbose / Very Verbose Output</td>
+</tr>
+</tbody>
+</table>
+<h3 id="was-passiert-bei-aid">Was passiert bei --aid?<a class="headerlink" href="#was-passiert-bei-aid" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Prüft ob AID in DIMAG existiert (<code>exportDoc</code>)</li>
+<li>Ruft <code>finalize($aid)</code> auf → setzt Status auf 20 in DIMAG</li>
+<li>Speichert in <code>files</code>-Tabelle</li>
+<li>Erstellt <code>imports</code>-Eintrag (Audit-Log)</li>
+</ol>
+<h3 id="status-codes">Status-Codes<a class="headerlink" href="#status-codes" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Code</th>
+<th>Bedeutung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10</td>
+<td>In Bearbeitung</td>
+</tr>
+<tr>
+<td>20</td>
+<td>Abgeschlossen</td>
+</tr>
+<tr>
+<td>30</td>
+<td>Zu löschen</td>
+</tr>
+<tr>
+<td>40</td>
+<td>Primärdaten gelöscht</td>
+</tr>
+<tr>
+<td>50</td>
+<td>Vollständig gelöscht</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="ingeadd-archive">inge:add-archive<a class="headerlink" href="#ingeadd-archive" title="Permanent link">&para;</a></h2>
+<p>Erstellt ein neues Archiv oder aktualisiert ein bestehendes.</p>
+<h3 id="verwendung_1">Verwendung<a class="headerlink" href="#verwendung_1" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code>php<span class="w"> </span>artisan<span class="w"> </span>inge:add-archive<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--slug<span class="o">=</span>opfikon<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--name<span class="o">=</span><span class="s2">&quot;Gemeindearchiv Opfikon&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--ais_url<span class="o">=</span><span class="s2">&quot;https://opfikon.anton.ji.ktzh.ch&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--soap_url<span class="o">=</span><span class="s2">&quot;https://dimaggem.ji.ktzh.ch/soap/webservice_3_5_0.php&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--soap_username<span class="o">=</span><span class="s2">&quot;username&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--soap_password<span class="o">=</span><span class="s2">&quot;password&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--sftp_address<span class="o">=</span><span class="s2">&quot;dimaggem.ji.ktzh.ch&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--sftp_port<span class="o">=</span><span class="m">22</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--sftp_username<span class="o">=</span><span class="s2">&quot;sftp_user&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--sftp_password<span class="o">=</span><span class="s2">&quot;sftp_pass&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--sftp_path<span class="o">=</span><span class="s2">&quot;/Import&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--import_successful_url<span class="o">=</span><span class="s2">&quot;https://opfikon.anton.ji.ktzh.ch/api/ingest/successful/[aid]&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--import_failed_url<span class="o">=</span><span class="s2">&quot;https://opfikon.anton.ji.ktzh.ch/api/ingest/failed/[aid]&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--parent_aid<span class="o">=</span><span class="s2">&quot;opfikon&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--sip_url<span class="o">=</span><span class="s2">&quot;https://opfikon.anton.ji.ktzh.ch/api/sip&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--api_token<span class="o">=</span><span class="s2">&quot;your-api-token&quot;</span>
 </code></pre></div>
 
-<h2 id="einrichtung">Einrichtung<a class="headerlink" href="#einrichtung" title="Permanent link">&para;</a></h2>
-<h3 id="archiv">Archiv<a class="headerlink" href="#archiv" title="Permanent link">&para;</a></h3>
-<ul>
-<li>slug: Eindeutiges Kürzel für ein Archiv  </li>
-<li>Name: Vollständiger Name des Archivs  </li>
-<li>
-<p>AIS URL: Link zum Archiv  </p>
-</li>
-<li>
-<p>SOAP URL: Link zum DIMAG Repository  </p>
-</li>
-<li>SOAP Username: DIMAG User  </li>
-<li>
-<p>SOAP Passwort: DIMAG Passwort  </p>
-</li>
-<li>
-<p>SFTP Adresse</p>
-</li>
-<li>SFTP Port  </li>
-<li>SFTP Username</li>
-<li>SFTP Passwort</li>
-<li>
-<p>SFTP Pfad</p>
-</li>
-<li>
-<p>DIMAG Parent AID (pid)</p>
-</li>
-<li>
-<p>SIP Base URL: Ablage der SIP Dateien durch das AIS</p>
-</li>
-<li>
-<p>URL für Rückmeldung bei erfolgreichem Import</p>
-</li>
-<li>URL für Rückmeldung bei gescheitertem Import</li>
-</ul>
-<h3 id="user">User<a class="headerlink" href="#user" title="Permanent link">&para;</a></h3>
-<ul>
-<li>User muss zu einem Archiv gehören</li>
-<li>User Bearer Token für Authentifizierung des AIS</li>
-</ul>
-<h3 id="env">.env<a class="headerlink" href="#env" title="Permanent link">&para;</a></h3>
-<p>Zweiter User (für Löschen in DIMAG notwendig)</p>
-<p>SOAP_ADMIN_USERNAME=
-SOAP_ADMIN_PASSWORD=</p>
+<hr />
+<h2 id="ingeadd-user">inge:add-user<a class="headerlink" href="#ingeadd-user" title="Permanent link">&para;</a></h2>
+<p>Erstellt einen neuen Benutzer oder aktualisiert einen bestehenden (identifiziert via E-Mail).</p>
+<h3 id="verwendung_2">Verwendung<a class="headerlink" href="#verwendung_2" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code>php<span class="w"> </span>artisan<span class="w"> </span>inge:add-user<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--name<span class="o">=</span><span class="s2">&quot;Max Mustermann&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--email<span class="o">=</span><span class="s2">&quot;max@example.com&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--password<span class="o">=</span><span class="s2">&quot;sicheresPasswort123&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--role<span class="o">=</span>admin<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--archive-slug<span class="o">=</span>opfikon
+</code></pre></div>
+
+<h3 id="optionen_1">Optionen<a class="headerlink" href="#optionen_1" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Beschreibung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>--name</code></td>
+<td>Name des Benutzers</td>
+</tr>
+<tr>
+<td><code>--email</code></td>
+<td><strong>Pflicht.</strong> E-Mail (dient als Identifier)</td>
+</tr>
+<tr>
+<td><code>--password</code></td>
+<td><strong>Pflicht.</strong> Passwort (min. 8 Zeichen)</td>
+</tr>
+<tr>
+<td><code>--role</code></td>
+<td>Rolle: <code>superadmin</code>, <code>admin</code>, <code>user</code></td>
+</tr>
+<tr>
+<td><code>--archive-slug</code></td>
+<td>Archiv-Zuordnung</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="ingeset-access-token">inge:set-access-token<a class="headerlink" href="#ingeset-access-token" title="Permanent link">&para;</a></h2>
+<p>Erstellt einen neuen API-Token für einen Benutzer (für Sanctum-Authentifizierung).</p>
+<h3 id="verwendung_3">Verwendung<a class="headerlink" href="#verwendung_3" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code>php<span class="w"> </span>artisan<span class="w"> </span>inge:set-access-token<span class="w"> </span>--email<span class="o">=</span>max@example.com
+
+<span class="c1"># Mit Token-Name</span>
+php<span class="w"> </span>artisan<span class="w"> </span>inge:set-access-token<span class="w"> </span>--email<span class="o">=</span>max@example.com<span class="w"> </span>--token-name<span class="o">=</span><span class="s2">&quot;AIS Integration&quot;</span>
+</code></pre></div>
+
+<hr />
+<h2 id="ingestatus">inge:status<a class="headerlink" href="#ingestatus" title="Permanent link">&para;</a></h2>
+<p>Führt eine Status-Abfrage für einen Benutzer durch.</p>
+<h3 id="verwendung_4">Verwendung<a class="headerlink" href="#verwendung_4" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code>php<span class="w"> </span>artisan<span class="w"> </span>inge:status<span class="w"> </span>--user-id<span class="o">=</span><span class="m">1</span>
+</code></pre></div>
+
+<hr />
+<h2 id="loadxmltest-file">loadxml:test-file<a class="headerlink" href="#loadxmltest-file" title="Permanent link">&para;</a></h2>
+<p>Erstellt eine LoadXML-Testdatei für ein Archiv.</p>
+<h3 id="verwendung_5">Verwendung<a class="headerlink" href="#verwendung_5" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code>php<span class="w"> </span>artisan<span class="w"> </span>loadxml:test-file<span class="w"> </span>--archive<span class="o">=</span>opfikon
+</code></pre></div>
 
 
 
